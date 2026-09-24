@@ -1,25 +1,40 @@
 # SolBerry patch notes
 
 ## Current source repo
-Repo was cleaned to keep only normal project source:
+Repo is cleaned now.
+
+In main repo:
 - build.gradle
 - settings.gradle
 - gradle.properties
 - src/
+- .github/workflows/build-release.yml
 - root .gitignore
 
-Removed from source repo:
+Removed:
 - custom build .bat files
-- gradle.bat helper files
-- config_examples folders
-- tools folders
-- old multiloader_workspace copy
+- gradle.bat
+- config_examples
+- tools
+- old multiloader_workspace
 - README / TODO / patch notes from source repo
 
-Project notes now live here in telegrablya/solberry.
+Code comments was removed from java, gradle, properties, toml and shaders. Better keep comments rare and short.
+
+## GitHub Actions
+All 5 versions built successful in GitHub Actions:
+- Fabric 1.20.1
+- Forge 1.20.1
+- Fabric 1.21.1
+- NeoForge 1.21.1
+- Fabric 1.21.11
+
+Release v1.0 was created and all 5 jars uploaded.
+
+Workflow now run on v* tags or manual start.
 
 ## Recent 1.21.11 Fabric render work
-Latest source line includes work on:
+Latest source line includes:
 - GUI motion blur
 - starvation motion blur
 - black hole render
@@ -27,7 +42,7 @@ Latest source line includes work on:
 - player skin second-layer render
 - starvation hallucination render
 
-Latest intended behavior:
+Wanted behavior:
 - black hole behind falling food
 - food stays in foreground
 - GUI cloud blur affects only cloud area
@@ -36,32 +51,9 @@ Latest intended behavior:
 - food changes smoothly during cloud spin
 - second skin layer stays attached to player model
 
-These render changes still need normal gameplay verification before calling them fully done.
+Still need normal gameplay check.
 
-## Other work already added during 0.5 development
-- setup wizard and large settings UI rework
-- category editor and food picker
-- presets and full settings reset
-- craving unlock system
-- advancement and FTB quest integration work
-- food detection / recipe safety
-- NBT-safe food handling
-- configurable hunger drain and fractional hunger
-- full-hunger healing options
-- post-eating regeneration
-- dimension rules
-- streak rewards
-- reroll system and reroll animations
-- jackpot rules
-- starvation effect and starvation rules
-- starvation visuals
-- player eating mechanic
-- player eating progress UI
-- old/new cloud textures
-- localization updates
-- loader/version ports and parity fixes
-
-## Important version history around latest sources
+## Version history around latest sources
 - v25: UI multiselect work and shared source baseline
 - v26: NeoForge 1.21.1 / Fabric 1.20.1 UI fixes
 - v27: Fabric 1.20.1 compile fix
