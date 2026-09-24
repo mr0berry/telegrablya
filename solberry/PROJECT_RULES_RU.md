@@ -1,12 +1,14 @@
 # SolBerry project rules
 
 - main mod repo contains source only
-- project TODO / patch notes / change notes go in telegrablya/solberry
-- no JAR build unless specifically needed
-- do not add custom build bat files
-- do not keep build logs in source repo
+- TODO / patch notes / change notes go in telegrablya/solberry
+- no custom build bat files
+- no build logs in source repo
+- jars are built by GitHub Actions
+- code comments should be rare and short
+- no long explanation comments
 - do not add unrelated fixes when request is specific
 - if requirement is unclear, ask before changing behavior
 - shared feature changes should be ported to every supported version
-- UI text should be short and normal, no long AI-style explanations
+- UI text should be short and normal
 - avoid cyrillic in local project paths
