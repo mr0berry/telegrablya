@@ -137,7 +137,10 @@ Source branch: mr0berry/SOLberry / feature/raven-trials-candy-scaffold
 - [ ] real candy models/textures supplied by user
 - [ ] build 12 arenas, difficulty progression and candy rewards (no crafting or random drops)
 - [ ] raven sack village spawn, villagers' dialogue and crow cutscene
-- [ ] player jumps into sack, raven loading animation and game selection
+- [x] clickable trial selection followed by physical jump into hollow sack (NeoForge 1.21.1 prototype)
+- [x] in-world 3D voxel ravens circling before/after teleport, no custom 2D loading screen
+- [ ] eliminate any brief vanilla dimension loading screen after actual game tests
+- [ ] raven bag lid and villager transformation animations, item-carry visuals
 - [x] per-player server SavedData for 12 trials: attempts, wins, candy unlocks
 - [x] clickable sack trial picker, server-only win callback, OP debugwin
 - [x] ordinary inventory snapshot (main slots, armor, offhand); deny held cursor/crafting items
