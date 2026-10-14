@@ -123,3 +123,28 @@ German currently has 365 translated keys in the tracked set.
 - check every supported project after shared changes
 - do not assume one loader fix works on another
 - keep source repo clean, no build output or logs
+
+## Raven trials / Halloween (WIP branch)
+
+Source branch: mr0berry/SOLberry / feature/raven-trials-candy-scaffold
+
+- [x] 12 stationary candy placeholders (NeoForge 1.21.1 only)
+- [x] 2 active candy slots, third only if current cravings completed
+- [x] death resets candy selections; basic hunger costs
+- [x] separate flat raven_trials dimension placeholder
+- [x] basic raven sack block (dialogue placeholder)
+- [ ] move candies to Fabric 1.20.1, Forge 1.20.1, Fabric 1.21.1 and Fabric 1.21.11 after compile checks
+- [ ] real candy models/textures supplied by user
+- [ ] build 12 arenas, difficulty progression and candy rewards (no crafting or random drops)
+- [ ] raven sack village spawn, villagers' dialogue and crow cutscene
+- [ ] player jumps into sack, raven loading animation and game selection
+- [ ] secure temporary inventory storage: hotbar, armor, offhand, cursor, modded accessories/backpacks
+- [ ] anti-cheese: modded abilities/flight/remote inventories, teammates, block interaction, dimensions and commands
+- [ ] persist challenge session and restore player equipment after death/logout/restart
+- [ ] witch iris: single dream splash bottle per life, sleep effect for enemies, player dream traversal
+- [ ] spider caramel: triple shift, real wall/ceiling movement with camera/accessibility mode
+- [ ] crow transformation: actual model/flight, invulnerability, totem/cooldown order tests
+- [ ] true projectile reflection, rubber safe-place rebound, balancing
+- [ ] candy status UI, translations in all supported languages
+- [ ] static checks, compiling and multiplayer test before merging; no JAR compiled in this prototype
+
