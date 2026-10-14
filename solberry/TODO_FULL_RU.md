@@ -138,13 +138,21 @@ Source branch: mr0berry/SOLberry / feature/raven-trials-candy-scaffold
 - [ ] build 12 arenas, difficulty progression and candy rewards (no crafting or random drops)
 - [ ] raven sack village spawn, villagers' dialogue and crow cutscene
 - [ ] player jumps into sack, raven loading animation and game selection
-- [ ] secure temporary inventory storage: hotbar, armor, offhand, cursor, modded accessories/backpacks
-- [ ] anti-cheese: modded abilities/flight/remote inventories, teammates, block interaction, dimensions and commands
-- [ ] persist challenge session and restore player equipment after death/logout/restart
+- [x] per-player server SavedData for 12 trials: attempts, wins, candy unlocks
+- [x] clickable sack trial picker, server-only win callback, OP debugwin
+- [x] ordinary inventory snapshot (main slots, armor, offhand); deny held cursor/crafting items
+- [x] restore hooks for death, logout/relogin, escape, time limit and failed entry
+- [x] fail-closed guard for known extra-slot mods (Curios, Accessories, Trinkets, etc.)
+- [x] basic guards for breaking blocks, items, pickup, attacks and gamemode
+- [ ] validate inventory escrow under restart/crash, full inventory, keepInventory and mod removal
+- [ ] full modded inventory/ability/remote storage + multiplayer anti-cheese, no bypasses
+- [ ] full dynamic arena instancing for several players in the same minigame
+- [ ] in-world victory conditions for all 12 games (currently OP test only)
 - [ ] witch iris: single dream splash bottle per life, sleep effect for enemies, player dream traversal
 - [ ] spider caramel: triple shift, real wall/ceiling movement with camera/accessibility mode
 - [ ] crow transformation: actual model/flight, invulnerability, totem/cooldown order tests
 - [ ] true projectile reflection, rubber safe-place rebound, balancing
 - [ ] candy status UI, translations in all supported languages
-- [ ] static checks, compiling and multiplayer test before merging; no JAR compiled in this prototype
+- [x] NeoForge 1.21.1 compile-only CI and asset checks (first GitHub run passed)
+- [ ] client/server gameplay and multiplayer regression tests before merging; no JAR release in this prototype
 
