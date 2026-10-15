@@ -115,6 +115,18 @@ Animations:
 - mob-drop progression can unlock related cooked food
 - custom food items and changed food values saved in presets
 
+## Addon compatibility / public API (planned)
+Reference: Spice Of Life: Berry Edition x Origins Compat by LolaTnae
+https://www.curseforge.com/minecraft/mc-mods/spice-of-life-berry-edition-x-origins-compat
+
+- [ ] inspect how the Origins Compat addon integrates with Berry before designing new hooks; do not assume it uses Mixins or decompilation
+- [ ] add a small documented API so other mods can extend cravings without patching Berry internals
+- [ ] provide hooks for player-specific food restrictions, craving pool filters and optional food weighting (Origins and other mods)
+- [ ] expose safe events for craving assignment, rerolls, completion and unlocks where needed
+- [ ] keep craving selection and saved state server-authoritative; handle empty eligible pools
+- [ ] maintain backwards compatibility and feature parity on all supported loaders/versions
+- [ ] document API use and test with/without external addons before release
+
 ## Localization
 Keep every language file in parity after UI/settings changes.
 German currently has 365 translated keys in the tracked set.
