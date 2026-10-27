@@ -31,6 +31,18 @@ Latest render patch still need full in-game check:
 - last item in some lists was not selectable
 - world motion blur must not blur opened GUI
 
+## Vanilla health regeneration compatibility (player report)
+Player wants only two morning food cravings and effects on completion, with otherwise vanilla survival mechanics.
+
+Confirmed in all 5 main-source versions: FoodDataMixin cancels vanilla FoodData.tick whenever Berry is enabled. At default full hunger multiplier 1.0, Berry heals 1 HP every 80 ticks, while vanilla saturated rapid healing is 1 HP every 10 ticks. The separate removeVanillaSaturation option defaults to true; turning it off alone does not restore vanilla food tick.
+
+- [ ] add explicit option for exact vanilla natural regeneration while cravings remain enabled
+- [ ] preserve fast saturated healing at 20 hunger and regular healing threshold at 18+ hunger, plus vanilla exhaustion/saturation behavior in the option
+- [ ] do not alter hunger drain, cravings, completion rewards or the existing custom regeneration mode when the option is off
+- [ ] check compatibility with naturalRegeneration gamerule, starvation, regen bonuses, other health mods and non-default hunger settings
+- [ ] implement and test on all five supported versions, then document the setting
+- [ ] reply to player after implementation; current workaround maxRegenMultiplierAtFullHunger=5.0 only approximates speed and is NOT exact vanilla regeneration
+
 ## Starvation
 - starvation effect immediately at 0 hunger
 - health damage starts from next day, configurable
